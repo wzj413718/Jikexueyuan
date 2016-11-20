@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<title>百度一下，你就知道</title>
+		<!--<link rel="stylesheet" href="css/baidu.css" type="text/css" />-->
+		<style type="text/css">
+			body,
+			ul,
+			li,
+			form,
+			p {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+			}
+			
+			body {
+				font-size: 13px;
+				position: relative;
+			}
+			
+			.content {
+				position: relative;
+				height: 100%;
+				min-width: 810px;
+				min-height: 600px;
+			}
+			
+			.nav_bar li {
+				float: left;
+				margin-left: 20px;
+			}
+			
+			.nav_bar li a {
+				font-size: 13px;
+				line-height: 24px;
+				color: #000;
+			}
+			
+			.bolder {
+				font-weight: bold;
+			}
+			
+			.nav_bar li a:hover {
+				color: mediumblue;
+				cursor: pointer;
+			}
+			
+			.login,
+			.opition {
+				font-weight: normal;
+			}
+			
+			.more {
+				position: absolute;
+				top: -2px;
+				right: 15px;
+				padding: 1px 5px;
+				background-color: #3385FF;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			
+			.bd_logo {
+				width: 270px;
+				height: 129px;
+			}
+			
+			.header {
+				position: absolute;
+				top: 0;
+				right: 0;
+				margin: 19px 0px 5px 0px;
+				padding: 0 80px 0 0;
+			}
+			
+			.middle {
+				position: relative;
+				top: 38.2%;
+			}
+			
+			.middle_content {
+				position: relative;
+				top: -191px;
+				text-align: center;
+			}
+			
+			#fm {
+				margin: 22px auto 0;
+				width: 640px;
+			}
+			
+			input {
+				padding: 0;
+				border: 0;
+			}
+			
+			.search_content_s {
+				width: 539px;
+				height: 34px;
+				border: 1px solid darkgray;
+				border-right-width: 0px;
+				float: left;
+			}
+			
+			.search_content_s:hover {
+				border-color: dimgray;
+			}
+			
+			.search_content:focus {
+				border-color: #3385FF;
+			}
+			
+			.search_content {
+				width: 520px;
+				height: 20px;
+				margin: 7px 0 0 5px;
+				border: 0;
+				outline: 0;
+			}
+			
+			.s_c_camera {
+				background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_679c15cc.png) 
+				no-repeat;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				margin-top:8px;
+				margin-left: -18px;
+			}
+			.s_c_camera:hover{
+				cursor: pointer;
+				background-position: 0 -20px;
+			}
+			.search_btn {
+				width: 100px;
+				height: 36px;
+				font-size: 15px;
+				color: #fff;
+				background-color: #3385ff;
+				border-bottom: 1px solid #2868c8;
+				float: left;
+				margin-left: -1px;
+			}
+			
+			.search_btn:hover {
+				background-color: #317ef3;
+				box-shadow: 1px 1px 1px #ccc;
+				cursor: pointer;
+			}
+			
+			.footer {
+				width: 100%;
+				height: 100px;
+				position: absolute;
+				bottom: 23px;
+				text-align: center;
+				color: #A9A9A9;
+				display: flex;
+				justify-content: center;
+			}
+			
+			.lt {
+				float: left;
+			}
+			
+			.nm {
+				margin-left: 33px;
+			}
+			
+			.nm,
+			.mb {
+				float: left;
+			}
+			
+			.ft_rt {
+				text-align: left;
+				margin-left: 20px;
+				display: inline-block;
+				line-height: 22px;
+				position: relative;
+				top: -8px;
+			}
+			
+			.ft_rt a {
+				color: #A9A9A9;
+			}
+			
+			.ft_lt {
+				display: inline-block;
+			}
+			
+			.mb_content.lt {
+				line-height: 23px;
+				margin: 8px 0 0 10px;
+			}
+			
+			.nm_content.lt {
+				line-height: 23px;
+				margin: 8px 0 0 10px;
+			}
+			
+			.alink a {
+				margin-left: 47px;
+			}
+			
+			#delMargin {
+				margin-left: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="header">
+				<ul class="nav_bar">
+					<li><a href="https://www.nuomi.com/?cid=002540" class="bolder">糯米</a></li>
+					<li><a href="http://news.baidu.com/" class="bolder">新闻</a></li>
+					<li><a href="https://www.hao123.com/" class="bolder">hao123</a></li>
+					<li><a href="http://map.baidu.com/" class="bolder">地图</a></li>
+					<li><a href="http://v.baidu.com/" class="bolder">视频</a></li>
+					<li><a href="http://tieba.baidu.com/" class="bolder">贴吧</a></li>
+					<li><a href="">登录</a></li>
+					<li><a href="">设置</a></li>
+					<li><a href="" class="more" style="color: #fff;">更多产品</a></li>
+				</ul>
+			</div>
+			<div class="middle">
+				<div class="middle_content">
+					<div id="img">
+						<img src="./img/bd_logo1.png" class="bd_logo" />
+					</div>
+					<form action="" id="fm" class="fm" name="form">
+						<span class="search_content_s" id="content_s">
+							<input type="text" class="search_content" id="content_target">
+							<span class="s_c_camera"></span>
+						</span>
+						<span class="search_btn_s">
+							<input type="submit" class="search_btn"  value="百度一下">
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="ft_lt">
+				<div class="mb">
+					<div class="mb_code lt">
+						<img src="./img/baidu_prcode.png">
+					</div>
+					<div class="mb_content lt">
+						<p style="font-weight: bolder;color: #696969;">手机百度</p>
+						<p>快人一步</p>
+					</div>
+				</div>
+				<div class="nm">
+					<div class="nm_code lt">
+						<img src="./img/nuomi_prcode.png">
+					</div>
+					<div class="nm_content lt">
+						<p style="font-weight: bolder;color: #696969;">百度糯米</p>
+						<p>一元大餐</p>
+					</div>
+				</div>
+			</div>
+			<div class="ft_rt">
+				<p class="alink">
+					<a href="https://www.baidu.com/cache/sethelp/help.html" id="delMargin">把百度设为主页</a>
+					<a href="http://home.baidu.com/">关于百度</a>
+					<a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>
+				</p>
+				<p>©2016 Baidu <a href="http://www.baidu.com/duty/">使用百度前必读</a> <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号 </p>
+				<p>京公网安备11000002000001号</p>
+			</div>
+		</div>
+	</body>
+
+</html>
