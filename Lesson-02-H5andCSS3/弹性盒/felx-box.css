@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*display: -webkit-flex;*/
+}
+
+/*弹性盒子（旧）*/
+.oldBox {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    display: -webkit-box;
+    -webkit-box-pack: center; /*旧版本水平居中*/
+    -webkit-box-align: center; /*旧版本垂直居中*/
+    -webkit-box-lines: multiple;
+}
+
+/*怪异盒子模型*/
+.unusualBox-content {
+    width: 120px;
+    height: 120px;
+    background-color: #FF5B8B;
+    padding: 10px;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+}
+
+.unusualBox-inner {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    font-weight: bold;
+    line-height: 90px; /*设置行高让单行文字垂直居中*/
+    text-align: center; /*让文字水平居中*/
+}
+
+/*正常盒子模型*/
+.oldBox,.columnBox,.control{
+    float: left;
+}
+.newBox,.column{
+    clear:both;
+}
+.normalBox-content {
+    width: 90px;
+    height: 90px;
+    background-color: #FF5B8B;
+    padding: 10px;
+    border: 5px solid #000000;
+    margin-right: 10px;
+}
+
+.normalBox-inner {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    font-weight: bold;
+    line-height: 90px; /*设置行高让单行文字垂直居中*/
+    text-align: center; /*让文字水平居中*/
+}
+
+/*新的弹性盒子flex*/
+.newBox {
+    height: 280px;
+    border: 2px solid #000;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.newBox div {
+    width: 80px;;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px 1px #000;
+    margin-right: 5px;
+    background-color: #FF5B8B;
+
+}
+.columnBox{
+    width:900px;
+    height:304px;
+    padding:4px;
+    border:2px solid #000;
+    -webkit-column-count: 3;
+    -webkit-column-rule-style:dotted;
+    overflow: hidden;
+    box-sizing: border-box;
+
+
+}
+/*按钮容器*/
+.control {
+    display: flex;
+}
+
+button {
+    width: 100px;
+    height: 20px;
+    line-height: 18px;
+    background-color: #FF5B8B;
+    border: 0;
+    box-shadow: 1px 1px 2px 1px #000;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    color: #fff;
+    border-bottom: #000;
+}

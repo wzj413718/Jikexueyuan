@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒模型</title>
+    <link rel="stylesheet" href="./felx-box.css" type="text/css">
+    <script src="jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="flex-box.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="oldBox" style="margin-right: 10px;"><!--弹性盒子（旧）-->
+    <div class="normalBox"><!--正常盒子-->
+        <div class="normalBox-content">
+            <div class="normalBox-inner">正常盒子</div>
+        </div>
+    </div>
+    <div class="unusualBox"><!--怪异盒子-->
+        <div class="unusualBox-content">
+            <div class="unusualBox-inner">怪异盒子</div>
+        </div>
+    </div>
+</div>
+<div class="columnBox">
+    <p>
+        【编者按：2016年6月6日，前驻法国大使、外交学院前院长吴建民在“2016中美大学智库论坛”上做题为“中美关系与世界秩序”的主题演讲。他说，中美两国是世界秩序两大支柱，中美之间的分歧原因多种多样，推动中美关系发展要聚焦合作、管控分歧并警惕民族主义和民粹主义】
+
+        一、 中美两国是世界秩序两大支柱
+
+        2014年10月，我在美国纽约会见了基辛格博士，他对我说：“美中两国是世界秩序不可或缺的两大支柱。”基辛格博士用“支柱”一词是很贴切的。既然是两大支柱共同支撑国际社会秩序，一个就不能取代另外一个；既然是支柱，一个就不能破坏另一个。我非常赞同这个看法，离开中美两大国去谈世界秩序是比较困难的。
+
+        中国现在提倡世界新秩序并不是要把现有的秩序推倒重来、另搞一套。中国的崛起得益于现在的秩序，没有现存的秩序提供的一些规则，中国不可能发展这么快。所以我们不是要把现存的秩序推倒来，但是现存的秩序需要改革。国际上的力量对比发生了变化，包括中国在内的一批发展中国家都得到了发展。2012年，按照购买力平价标准统计，发展中国家GDP第一次超过了发达国家，这种趋势还在继续。美国是当今世界唯一的超级大国，中国是最大的发展中国家，中美两国的合作，对于未来的世界秩序至关重要。今年1月27日，习近平主席在会见美国国务卿克里的时说：“中美加强合作，可以做出有利世界的大事。”我的理解大事就包括对未来世界秩序的建设。
+
+        从1971年到现在，45年间中美关系大致上可以分为三个阶段：
+
+        第一阶段，1971年到1991年，这个时候中美关系的支柱是共同反对苏联霸权主义。这20年中美关系的发展主要是在政治方面，经济方面也有很多的发展，但是由于中国的国力有限，1989年中美贸易才122亿美元。
+
+        第二阶段，1991年苏联解体之后，冷战结束，中美关系发展进入了一个新的阶段。从1991年到2013年，中美关系的支柱主要是经济。这20多年中美经济关系大发展，连我们这些当年对中美关系比较乐观的人都没有想到。1991年中美贸易额253亿美元；2013年则上升到5200亿美元。
+
+        2013年6月之后，中美关系进入新的阶段。这主要是以习近平主席在美国加利福尼亚州安纳伯格庄园会见奥巴马总统，双方达成构建新型大国关系的共识为标志。在新阶段，中美关系有三大支柱：
+
+        第一，应对全球性挑战。</p>
+</div>
+
+<div class="newBox" id="newBox"><!--新的弹性盒子-->
+    <div class="flex1"><h2>1</h2></div>
+    <div class="flex2" style="order:-1;"><h2>2</h2></div><!--使用order排序-->
+    <div class="flex3"><h2>3</h2></div>
+    <div class="flex1"><h2>4</h2></div>    <div class="flex3"><h2>3</h2></div>
+    <div class="flex1"><h2>4</h2></div>    <div class="flex3"><h2>3</h2></div><div class="flex3"><h2>3</h2></div>
+
+
+</div>
+
+<div class="control">
+    <div><!--flex-direction设置-->
+        <p style="font-weight: bold">flex-direction</p>
+        <button class="row" id="row">row</button>
+        <button class="row_reverse" id="row_reverse">row-reverse</button>
+        <button class="column" id="column">column</button>
+        <button class="column_reverse" id="column_reverse">column-reverse</button>
+    </div>
+    <div><!--align-items设置-->
+        <p style="font-weight: bold">align-items</p>
+        <button class="flex_start" id="flex_start">flex-start</button>
+        <button class="flex_end" id="flex_end">flex-end</button>
+        <button class="center" id="center">center</button>
+        <button class="baseline" id="baseline">baseline</button>
+        <button class="stretch" id="stretch">stretch</button>
+    </div>
+    <div><!--justify-content设置-->
+        <p style="font-weight: bold">justify-content</p>
+        <button class="flex_start" id="jFlex_start">flex_start</button>
+        <button class="flex_end" id="jFlex_end">flex_end</button>
+        <button class="center" id="jCenter">center</button>
+        <button class="space_between" id="space_between">space_between</button>
+        <button class="space_around" id="space_around">space_around</button>
+    </div>
+</div>
+</body>
+
+</html>
