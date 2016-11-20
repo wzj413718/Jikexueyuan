@@ -1,0 +1,149 @@
+html,
+body {
+    font-size: 13px;
+}
+
+body {
+    background-image: url(../images/bg_wood.jpg);
+}
+
+/* 外边框设置 */
+
+.box {
+    margin: 0 auto;
+    height: 100%;
+    /* 表格最后填写好后，更改为100%自适应 */
+    width: 720px;
+    border-radius: 30px;
+    position: relative;
+    background-color: #fff;
+}
+
+/* 标题图片 */
+
+.imgDiv {
+    display: inline-block;
+    margin: 4px 0;
+}
+
+/* 图片位置调整 */
+
+div img {
+    margin-left: 30px;
+}
+
+/* 小导航 */
+
+.nav {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    right: 28px;
+    top: 50px;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #FF5B8B;
+}
+
+.nav li a:hover {
+    color: #000;
+}
+
+/* 设置表格单元格重叠 */
+
+table {
+    border-collapse: collapse;
+    border: 0;
+    border-color: #c9c9c9;
+}
+
+/* 表格设置宽度、水平居中、灰色边框 */
+
+.tb-box {
+    width: 670px;
+    margin: 0 auto;
+}
+
+.pClass {
+    text-align: center;
+    margin: 2px 0;
+}
+
+.tb-left {
+    width: 20%;
+    text-align: right;
+}
+
+th {
+    font-size: 18px;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* 标题设置 */
+
+.tittle {
+    padding-bottom: 15px;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+    font-size: 18px;
+    font-family: 黑体;
+}
+
+.foot {
+    text-align: center;
+}
+
+i {
+    color: red;
+    font-style: normal;
+}
+
+td {
+    color: #000;
+}
+
+/* 设置备注字颜色为蓝色 */
+
+.blue {
+    color: #0000ff;
+}
+
+.td-tit {
+    font-weight: bold;
+    color: #00008B;
+    padding: 3px 0 3px 13px;
+    background-color: #E5E5E5;
+}
+
+.back:link {
+    color: #0000ff;
+}
+
+.btn {
+    text-align: center;
+    height: 50px;
+}
+
+.btn input {
+    width: 60px;
+    height: 25px;
+    background-color: #ededed;
+    border: 1px solid #000;
+}
+
+.btn input:hover {
+    border-color: #1E90FF;
+    background-color: #87CEFA;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>青岛家教网登录页面</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+
+<body>
+<div class="box">
+    <div class="imgDiv">
+        <a href="http://www.qdjj.net"><img src="images/qdjjlogo.gif" alt=""></a>
+        <ul class="nav">
+            <li>
+                <a href="./register_index.html">注册</a>
+            </li>
+            <li>
+                <a href="#">登录</a>
+            </li>
+            <li>
+                <a href="#">收藏本页</a>
+            </li>
+        </ul>
+        <form action="./register_success.html" method="post" accept-charset="utf-8">
+            <table class="tb-box" border="1px">
+                <thead>
+                <tr>
+                    <th>
+                        新教员注册第一步选择用户名、密码和身份
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <table class="tb-content" cellpadding="1">
+                            <tbody>
+                            <tr class="setH">
+                                <td colspan="3">注意：带 <i>*</i> 为必填项</td>
+                            </tr>
+                            <tr class="gray setH">
+                                <td colspan="3"> 登录名和密码</td>
+                            </tr>
+                            <tr class="user-msg setH">
+                                <td class="right">
+                                    <label for="username"><i>*</i>会员名：</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="username" id="username" value="" placeholder="请输入用户名"
+                                           required>
+                                </td>
+                                <td class="lt" id="checkUser">
+                                    <font color="#FF8C00">3-12个字符</font>，会员名须以字母开头，只能由英文字母、数字、下划线组成，中间不能有空格.
+                                </td>
+                            </tr>
+                            <tr class="user-msg setH">
+                                <td class="right">
+                                    <label for="pwd"><i>*</i>密码：</label>
+                                </td>
+                                <td>
+                                    <input type="password" name="pwd" id="pwd" required>
+                                </td>
+                                <td class="lt" id="checkPwd" colspan="2">
+                                    <font color="#FF8C00">6-20个字符</font>，区分英文字母大小写。
+                                </td>
+                            </tr>
+                            <tr class="user-msg setH">
+                                <td class="right">
+                                    <label for="re-pwd"><i>*</i>确认密码：</label>
+                                </td>
+                                <td>
+                                    <input type="password" name="re-pwd" id="re-pwd" required></td>
+                                <td class="lt" id="checkRe" colspan="2">
+                                    确认密码要与密码完全一致，注意英文字母大小写。
+                                </td>
+                            </tr>
+                            <tr class=" gray setH">
+                                <td colspan="3"> 选择教员身份</td>
+                            </tr>
+                            <tr>
+                                <td class="pepid"><i>*</i>教员身份：</td>
+                                <td colspan="2">
+                                    <label>
+                                        <input type="radio" name="pe" value="大学生"> 在校大学生(研究生) ,不含留学生
+                                        <br>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="pe" value="专职教师"> 专职教师(在职/进修/离职/退休)
+                                        <br>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="pe" value="外籍人士"> 外籍人士(含留学生、外教)，海外归国人员
+                                        <br>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="pe" value="社会职业人士"> 社会职业人士(已经毕业离校的非教师职业人员)</label>
+                                </td>
+                            </tr>
+                            <tr class="btn-box">
+                                <td colspan="3" class="btn">
+                                    <input type="submit" name="submit" value="提交">
+                                    <input type="reset" name="reset" value="重置">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <p class="foot">Copyright © 2003～2008 版权所有 青岛家教网</p>
+    </div>
+</div>
+</body>
+
+</html>
