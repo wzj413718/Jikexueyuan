@@ -1,0 +1,68 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* div样式尺寸 */
+
+div.s {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #ffd700;
+    opacity: 0.5;
+    box-shadow: 1px 1px 3px #000;
+}
+
+
+/* hover事件 透明度变为100% */
+
+div.s:hover {
+    opacity: 1;
+}
+
+
+/* 设置图片的宽高，实现 垂直剧中 */
+
+img.batman {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+
+/* 利用绝对定位将包含十字的div垂直水平居中 */
+
+div.box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 306px;
+    height: 306px;
+    margin: auto;
+}
+
+div.line {
+    float: left;
+}
+
+div.clear {
+    clear: both;
+    /* 清除浮动 */
+}
+
+div.south,
+.north {
+    margin: 0 auto;
+}
