@@ -1,0 +1,40 @@
+body{
+    background:url("../img/18fd0659f245057fcd473ab1c3bd155a.jpeg");
+}
+.loginUI{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(104, 98, 208, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+form{
+    width: 250px;
+    height: 200px;
+    margin: 125px auto 125px auto;
+}
+
+.remAndauto{
+    color: #fff;
+
+}
+.setBtn{
+    text-align: center;
+}
+.setBtn button{
+    margin-right: 20px;
+}
+h3{
+    color:#fff;
+    font-weight: bold;
+}
+.login_title{
+    position: absolute;
+    top:10%;
+    left:50%;
+    margin-left: -72px;
+}
