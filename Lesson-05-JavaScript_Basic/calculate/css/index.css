@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    width: 300px;
+    height: 400px;
+    background-color: #35b558;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -150px;
+    box-shadow: 0 0 2px 2px #000;
+}
+
+.showBox {
+    width: 250px;
+    height: 50px;
+    margin: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px #000;
+}
+
+.countBtn {
+    width: 250px;
+    height: 275px;
+    margin: 25px;
+}
+
+button {
+    width: 64px;
+    height: 57px;
+    float: left;
+    margin: -1px;
+    outline: 0;
+    border-color: #CDDC39;
+    background: #4CAF50;
+    color: #dcdcdc;
+    font-size: 25px;
+    font-family: "黑体";
+}
+
+#clearAll {
+    width: 188px;
+}
+
+#regularShow {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    line-height: 50px;
+    font-size: 30px;
+    overflow: hidden;
+}
