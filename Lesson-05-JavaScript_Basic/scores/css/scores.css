@@ -1,0 +1,68 @@
+body,
+html,
+div,
+ul,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(../img/18fd0659f245057fcd473ab1c3bd155a.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* 平铺效果 */
+    background-repeat: no-repeat;
+    /* 不重复 */
+}
+
+.container {
+    display: table;
+    width: 300px;
+    height: 100px;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(100, 90, 200, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -150px;
+}
+
+form {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    ;
+    line-height: 30px;
+}
+
+input {
+    height: 20px;
+    display: inline-block;
+}
+
+button {
+    width: 50px;
+    height: 26px;
+    border-radius: 4px;
+    color: #dcdcdc;
+    font-weight: bold;
+    font-size: 13px;
+    border: 0;
+    background: rgba(49, 49, 54, 0.71);
+}
+
+button:hover {
+    background: rgba(131, 131, 139, 0.71);
+}
