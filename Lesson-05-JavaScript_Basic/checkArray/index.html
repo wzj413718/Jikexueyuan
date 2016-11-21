@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>查找数组</title>
+</head>
+
+<body>
+    <script src="./checkArray.js" type="text/javascript" charset="utf-8">
+    var arr = ["b", "m", "s", "q", "s", "s", "b", "b"];
+    var checkArr = {};
+    var index = {};
+
+    for (var i = 0; i < arr.length; i++) {
+        var char = arr[i];
+        if (checkArr[char]) {
+            checkArr[char] += 1;
+            index[char] += "," + i;
+        } else {
+            checkArr[char] = 1;
+            index[char] = i;
+        }
+    }
+    console.log(checkArr);
+    console.log(index);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript" charset="utf-8">
+    var arr = ["b", "m", "s", "q", "s", "s", "b", "b"];
+    var checkArr = {};
+    var index = {};
+
+    for (var i = 0; i < arr.length; i++) {
+        var char = arr[i];
+        if (checkArr[char]) {
+            checkArr[char] += 1;
+            index[char] += "," + i;
+        } else {
+            checkArr[char] = 1;
+            index[char] = i;
+        }
+    }
+    console.log(checkArr);
+    console.log(index);
+
+    var max;
+    max = checkArr[Object.keys(checkArr).sort(function(a, b) {
+        return checkArr[a] <= checkArr[b];
+    })[0]]
+
+    var maxString = [];
+    for (i in checkArr) {
+        if (checkArr[i] >= max) {
+            max = checkArr[i];
+            maxString.push(i);
+        }
+    }
+    document.write("出现次数最多的字母是：" + maxString + "<br>")
+
+    for (var i = 0; i < maxString.length; i++) {
+        key = maxString[i]
+        document.write(key + "出现的次数为" + checkArr[key] + "<br>");
+        document.write(key + "出现的位置" + index[key] + "<br>");
+    }
+    </script>
+</body>
+
+</html>
