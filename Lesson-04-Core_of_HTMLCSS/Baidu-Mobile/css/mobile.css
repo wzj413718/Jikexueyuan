@@ -1,0 +1,435 @@
+/* =====================以下为手机样式========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+section,
+article {
+    clear: both;
+}
+
+
+/* 手机模式下以下内容显示 */
+
+.mob_bottomList {
+    display: block;
+}
+
+.b-c-image img {
+    height: 55px;
+}
+
+
+/* 手机模式以下内容隐藏 */
+
+.pcClinet {
+    display: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    -webkit-text-size-adjust: none;
+    background: #f1f1f1;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 页头 */
+
+
+/* 换肤 */
+
+.infor {
+    position: relative;
+    height: 54px;
+}
+
+
+/* 百度LOGO */
+
+.b-c-image {
+    height: 55px;
+    padding: 17px 0 15px;
+}
+
+.bd-content {
+    margin-bottom: 10px;
+}
+
+.bd-content form {
+    height: 42px;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 10px;
+    position: relative;
+}
+
+.search-box {
+    display: box;
+    display: -webkit-box;
+}
+
+.search-box input {
+    font-size: 18px;
+}
+
+#search-txt {
+    height: 42px;
+    padding: 7px 42px 7px 6px;
+    border: 0;
+}
+
+.cmera {
+    width: 39px;
+    height: 39px;
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 177px;
+}
+
+.cmera:before {
+    content: " ";
+    border: 4px solid transparent;
+    border-top-color: #555;
+    position: absolute;
+    top: 18px;
+    right: 12px;
+}
+
+.cmera:after {
+    content: "";
+    display: inline-block;
+    margin-top: 9px;
+    height: 20px;
+    width: 14px;
+    background: url(http://m.baidu.com/static/index/promB/mmsicon.png) 1px 0 no-repeat;
+    background-size: 33px 19px;
+}
+
+.cmeraShow {
+    display: none;
+    width: 108px;
+    height: 40px;
+    position: absolute;
+    top: 57px;
+    left: -18px;
+    z-index: 2;
+}
+
+.showThis {
+    display: block;
+}
+
+.cmeraShow:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -5px;
+    left: 21px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
+    transform: rotate(45deg);
+}
+
+.cmrea-box,
+.voice-box {
+    width: 50%;
+    height: 40px;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: -1px;
+}
+
+.cmrea-box:after {
+    content: " ";
+    height: 20px;
+    width: 22px;
+    display: inline-block;
+    margin-top: 9px;
+    background: url(../img/showCmera.png) -12px 0px no-repeat;
+    background-size: 32px 19px;
+}
+
+.voice-box:after {
+    content: " ";
+    height: 20px;
+    width: 14px;
+    display: inline-block;
+    margin-top: 9px;
+    background: url(../img/showCmera.png) 1px 0px no-repeat;
+    background-size: 33px 19px;
+}
+
+
+/* 百度按钮 */
+
+.search-btn {
+    display: block;
+    width: 82px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-btn input {
+    width: 82px;
+    height: 42px;
+    font-size: 16px;
+    letter-spacing: -1px;
+    border: 0;
+    border-top: 1px solid #38f;
+    border-bottom: 1px solid #38f;
+    color: #fff;
+    background: #38f;
+}
+
+
+/* 导航 */
+
+.mob_nav_bar {
+    margin: 17px 0 14px;
+    overflow: hidden;
+    height: 42px;
+}
+
+.mob_nav li:first-child,
+.mob_nav li:nth-child(7) {
+    margin-left: 2%;
+}
+
+.mob_nav li {
+    float: left;
+    font-size: 12px;
+    width: 16%;
+    height: 51px;
+    cursor: pointer;
+}
+
+.new a:before {
+    content: '\e799';
+    color: #666;
+    font: 24px/1 icons;
+}
+
+
+/* 卡片 */
+
+.plus_title {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.plus {
+    margin-top: 8px;
+    background: #fff;
+}
+
+.card {
+    font-size: 14px;
+}
+
+.plus_card {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 8px 10px;
+}
+
+.admin {
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+}
+
+.mynav_title h2,
+.traffic_title h2 {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 40px;
+    color: #999;
+}
+
+.mynav_content {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.mynav_content a {
+    height: 42px;
+    line-height: 42px;
+    float: left;
+    padding: 0 6px;
+    width: 25%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.edit {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.edit_button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    cursor: pointer;
+}
+
+.edit_box {
+    position: absolute;
+    top: 40px;
+    right: -8px;
+    width: 91px;
+    background-color: #fff;
+    z-index: 3;
+    display: none;
+}
+
+.edit_box li {
+    display: block;
+    line-height: 45px;
+    border: 1px solid #dcdcdc;
+    margin: -1px;
+    text-align: center;
+}
+
+
+/* 交通路况 */
+
+.traffic_content {
+    height: 70px;
+    padding-top: 12px;
+}
+
+.traffic_content p:first-child {
+    color: #0058d2;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* 页面底部 */
+
+.bd-footer {
+    height: 207px;
+}
+
+.mob_bottomList {
+    margin: 0 28px;
+    height: 99px;
+}
+
+.mob_bottomList li {
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+    display: list-item;
+}
+
+.mob_bottomList a {
+    height: 33px;
+    font-size: 13px;
+    display: block;
+    padding-left: 21px;
+    background: none no-repeat 0 center;
+    color: #555;
+}
+
+.mob_bottomList .baiduIcon a {
+    background-image: url(http://m.baidu.com/static/index/icon/w_icon2.png);
+    background-size: 15px 15px;
+}
+
+
+/* 联系方式  公安备案 */
+
+.center {
+    margin: 10px 28px 0 28px;
+}
+
+.bd-address .userMsg a {
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+}
+
+.bd-address,
+.bd-address a {
+    color: #999;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.bd-address {
+    clear: both;
+}
+
+.copyrigh p:first-child {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 6px 0 0 0;
+}
+
+.copyrigh p:last-child {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 6px 0 20px 0;
+}
+
+.websafe i {
+    margin-right: 5px;
+    width: 14px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    background: url(../img/safe.png) no-repeat center center;
+    background-size: 14px 17px;
+}
+
+
+/* 动作 */
+
+.search-box input:focus +span {
+    display: none;
+}
