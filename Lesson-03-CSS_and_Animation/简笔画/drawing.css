@@ -1,0 +1,355 @@
+    body {}
+    
+    .container {
+        position: relative;
+        width: 500px;
+        height: 371px;
+        background-color: #A0C5E8;
+        z-index: -2;
+    }
+    
+    .container div {
+        position: absolute;
+    }
+    /* 萝卜身体 */
+    
+    .bo_body {
+        width: 221px;
+        height: 105px;
+        background-color: #FD954C;
+        box-shadow: 3px 22px 29px 19px #fe5e1a inset;
+        border-top-left-radius: 112px 76px;
+        border-top-right-radius: 63px 82px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -112px;
+        z-index: 2;
+    }
+    /* 萝卜眼睛 */
+    
+    .eyes_l {
+        width: 95px;
+        height: 95px;
+        background-color: #EEEEF8;
+        border-radius: 50%;
+        top: 62%;
+        left: 28%;
+        z-index: 3;
+    }
+    
+    .eyesBall1 {
+        width: 56px;
+        height: 56px;
+        top: 10%;
+        left: 21%;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 2px 2px 8px 10px #fff;
+    }
+    
+    .eyesBall1_a {
+        z-index: 6;
+        width: 51px;
+        height: 19px;
+        box-shadow: 1px 2px 6px 2px #104E8B inset;
+        top: 65%;
+        left: 7%;
+        background-color: #1380D5;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        -webkit-transform: rotate(-187deg);
+    }
+    
+    .eyes_r {
+        width: 95px;
+        height: 95px;
+        background-color: #EEEEF8;
+        border-radius: 50%;
+        top: 59%;
+        left: 49%;
+        z-index: 3;
+    }
+    
+    .eyesBall2 {
+        width: 56px;
+        height: 56px;
+        top: 10%;
+        left: 21%;
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 2px 2px 8px 10px #fff;
+    }
+    
+    .eyesBall1_a1 {
+        z-index: 6;
+        width: 51px;
+        height: 19px;
+        box-shadow: 1px 2px 6px 2px #104E8B inset;
+        top: 65%;
+        left: 7%;
+        background-color: #1380D5;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        -webkit-transform: rotate(-187deg);
+    }
+    /* 萝卜头发 */
+    
+    .hair1 {
+        width: 100px;
+        height: 118px;
+        background-color: #7AD53A;
+        left: 25%;
+        top: 56%;
+        z-index: -1;
+        border-top-left-radius: 44px 41px;
+        border-top-right-radius: 37px 25px;
+        -webkit-transform: rotate(-52deg);
+        box-shadow: 1px 1px 20px 3px #80BD5E inset;
+        background: linear-gradient(to top right, #7AD53A 64%, #fff 97%);
+        -webkit-animation: hariOne 2s linear infinite;
+    }
+    /* 头发动画 */
+    
+    @-webkit-keyframes hariOne {
+        0% {
+            -webkit-transform: rotate(-52deg);
+        }
+        30% {
+            -webkit-transform: rotate(-69deg);
+        }
+        60% {
+            -webkit-transform: rotate(-52deg);
+        }
+        90% {
+            -webkit-transform: rotate(-37deg);
+        }
+        100% {
+            -webkit-transform: rotate(-52deg);
+        }
+    }
+    
+    .hair1_a {
+        border-right: 5px solid #2D743C;
+        width: 100px;
+        height: 77px;
+        left: -1%;
+        top: 1%;
+        z-index: 1;
+        border-bottom-right-radius: 36px 41px;
+        -webkit-transform: rotate(-182deg);
+    }
+    
+    .hair1_a1 {
+        border-right: 5px solid #2D743C;
+        width: 100px;
+        height: 77px;
+        left: 54%;
+        top: 6%;
+        z-index: 1;
+        border-bottom-right-radius: 11px 68px;
+        -webkit-transform: rotate(-192deg);
+    }
+    
+    .hair2 {
+        width: 119px;
+        height: 113px;
+        background-color: #7AD53A;
+        left: 37%;
+        top: 43%;
+        z-index: 1;
+        border-top-left-radius: 36px 36px;
+        border-top-right-radius: 79px 48px;
+        -webkit-transform: rotate(1deg);
+        box-shadow: 1px 1px 20px 3px #80BD5E inset;
+        background: linear-gradient(to top left, #7AD53A 45%, #fff 114%);
+        -webkit-animation: hariTwo 2s linear infinite;
+    }
+    
+    @-webkit-keyframes hariTwo {
+        0% {
+            -webkit-transform-origin: bottom;
+            -webkit-transform: rotate(1deg);
+        }
+        30% {
+            -webkit-transform-origin: bottom;
+            -webkit-transform: rotate(13deg);
+        }
+        60% {
+            -webkit-transform-origin: bottom;
+            -webkit-transform: rotate(1deg);
+        }
+        90% {
+            -webkit-transform-origin: bottom;
+            -webkit-transform: rotate(-12deg);
+        }
+        100% {
+            -webkit-transform-origin: bottom;
+            -webkit-transform: rotate(1deg);
+        }
+    }
+    
+    .hair2_a {
+        border-right: 13px solid #459356;
+        width: 100px;
+        height: 77px;
+        left: 39%;
+        top: 32%;
+        z-index: 1;
+        border-bottom-right-radius: 19px 80px;
+        -webkit-transform: rotate(-182deg);
+    }
+    
+    .hair2_a1 {
+        border-right: 12px solid #31a135;
+        width: 103px;
+        height: 54px;
+        top: 7%;
+        left: 17%;
+        z-index: 1;
+        border-top-right-radius: 77px;
+        -webkit-transform: rotate(30deg);
+    }
+    
+    .hair3 {
+        width: 92px;
+        height: 117px;
+        background-color: #7AD53A;
+        left: 55%;
+        top: 52%;
+        z-index: -1;
+        border-top-left-radius: 69px 49px;
+        border-top-right-radius: 37px 29px;
+        border-bottom-right-radius: 43px;
+        box-shadow: 1px 1px 20px 3px #80BD5E inset;
+        -webkit-transform: rotate(52deg);
+        background: linear-gradient(to top left, #7AD53A 64%, #fff 92%);
+        -webkit-animation: hariThree 2s linear infinite;
+    }
+    
+    @-webkit-keyframes hariThree {
+        0% {
+            -webkit-transform: rotate(52deg);
+        }
+        30% {
+            -webkit-transform: rotate(71deg);
+        }
+        60% {
+            -webkit-transform: rotate(52deg);
+        }
+        90% {
+            -webkit-transform: rotate(35deg);
+        }
+        100% {
+            -webkit-transform: rotate(52deg);
+        }
+    }
+    
+    .hair3_a {
+        border-left: 6px solid #2D743C;
+        width: 100px;
+        height: 115px;
+        left: -16%;
+        top: 2%;
+        z-index: 1;
+        border-bottom-left-radius: 19px 30px;
+        -webkit-transform: rotate(182deg);
+    }
+    
+    .hair3_a1 {
+        border-right: 5px solid #2D743C;
+        width: 100px;
+        height: 77px;
+        left: 45%;
+        top: 14%;
+        z-index: 1;
+        border-bottom-right-radius: 11px 68px;
+        -webkit-transform: rotate(-192deg);
+    }
+    /* 萝卜腮红 */
+    
+    .face_pink1 {
+        width: 50px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #ff6f79;
+        opacity: 1;
+        z-index: 3;
+        top: 87%;
+        left: 31%;
+        box-shadow: 1px 1px 11px 6px #ff6f79;
+        -webkit-transform: rotate(-16deg);
+    }
+    
+    .face_pink2 {
+        width: 50px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #ff6f79;
+        opacity: 1;
+        z-index: 3;
+        top: 84%;
+        left: 58%;
+        box-shadow: 1px 1px 11px 6px #ff6f79;
+        -webkit-transform: rotate(4deg);
+    }
+    /* 萝卜嘴 */
+    
+    .mouth {
+        border: 18px solid #CA013D;
+        height: 0;
+        width: 0;
+        z-index: 8;
+        left: 225px;
+        top: 320px;
+        -webkit-transform: rotate(68deg);
+        border-bottom-color: transparent;
+        border-top-left-radius: 23% 62%;
+        border-top-right-radius: 106%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    
+    .mouth1 {
+        border: 18px solid #CA013D;
+        height: 0;
+        width: 0;
+        z-index: 8;
+        left: 234px;
+        top: 319px;
+        -webkit-transform: rotate(98deg);
+        border-top-color: transparent;
+        border-bottom-left-radius: 23% 62%;
+        border-bottom-right-radius: 106%;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    /* 萝卜手臂 */
+    
+    .bo_lefthand {
+        width: 20px;
+        height: 50px;
+        top: 91%;
+        left: 25%;
+        -webkit-transform: rotate(52deg);
+        background-color: #fe5e1a;
+        border-bottom-left-radius: 18px 33px;
+        border-bottom-right-radius: 5px 8px;
+        box-shadow: 1px 1px 4px 2px #F1B156 inset;
+    }
+    
+    .bo_righthand {
+        width: 20px;
+        height: 43px;
+        top: 83%;
+        left: 70%;
+        -webkit-transform: rotate(215deg);
+        background-color: #fe5e1a;
+        border-bottom-left-radius: 24px 46px;
+        border-bottom-right-radius: 5px 11px;
+        border-top-left-radius: 19px 13px;
+        box-shadow: 1px 1px 10px 1px #F1B156 inset;
+    }
