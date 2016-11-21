@@ -1,0 +1,591 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  ul,
+  li,
+  a,
+  span {
+      box-sizing: border-box;
+  }
+  
+  body,
+  html {
+      background-color: #f7f7f8;
+      font-family: "arial";
+  }
+  
+  li {
+      list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: #000;
+  }
+  /*  */
+  
+  .container {
+      width: 100%;
+      height: 670px;
+  }
+  /* 页面标题 */
+  
+  .titile {
+      width: 100%;
+      border-bottom: 1px solid #dcdcdc;
+  }
+  /* 标题导航 */
+  
+  .title_nav {
+      width: 1200px;
+      height: 63px;
+      margin: 0 auto;
+  }
+  
+  .title_img {
+      float: left;
+  }
+  
+  .title_ul {
+      float: right;
+  }
+  
+  .title_ul >li {
+      float: left;
+      line-height: 63px;
+      padding: 0px 10px;
+      cursor: pointer;
+  }
+  
+  .title_ul >li:hover {
+      background: #e7e7e7;
+  }
+  
+  .title_ul li a {
+      display: block;
+      height: 63px;
+      font-size: 13px;
+      color: #999;
+  }
+  /* 换肤 */
+  
+  .changeSkin {
+      position: relative;
+  }
+  
+  .changeSkin:hover .colorBar {
+      display: block;
+  }
+  
+  .colorBar {
+      position: absolute;
+      width: 46px;
+      height: 32px;
+      left: 0px;
+      display: none;
+  }
+  
+  .colorBar li {
+      border: 1px solid #dcdcdc;
+      border-top: 0;
+      font-size: 13px;
+      text-align: center;
+      line-height: 32px;
+      background-color: #f7f7f8;
+  }
+  
+  .colorBar li:nth-child(1):hover {
+      background-color: #ff0000;
+      color: #fff;
+  }
+  
+  .colorBar li:nth-child(2):hover {
+      background-color: #0000ff;
+      color: #fff;
+  }
+  
+  .colorBar li:nth-child(3):hover {
+      background-color: #1fd394;
+      color: #fff;
+  }
+  /* 百度搜索 */
+  
+  .baidu_search {
+      width: 1200px;
+      height: 73px;
+      margin: 0 auto;
+      padding-top: 30px;
+  }
+  
+  .bd_img_box {
+      height: 40px;
+      width: 120px;
+      background: url(../img/baidu.png) -9px -213px no-repeat;
+      float: left;
+  }
+  
+  .search_form {
+      margin-left: 30px;
+      float: left;
+  }
+  
+  .search_ul {
+      width: 40px;
+  }
+  
+  .search_ul li {
+      line-height: 20px;
+      height: 20px;
+  }
+  
+  .center {
+      width: 900px;
+      margin: 0 auto;
+  }
+  /* s搜索框 */
+  
+  .search_box {
+      width: 538px;
+      height: 44px;
+      float: left;
+      border: 1px solid #000;
+      border-right: 0px;
+      position: relative;
+      background-color: #fff;
+  }
+  /* 搜索输入框 */
+  
+  .search_content {
+      width: 450px;
+      height: 40px;
+      position: absolute;
+      top: 2px;
+      left: 38px;
+      font-size: 16px;
+      border: 0;
+      outline: 0;
+  }
+  /* 搜索按钮 */
+  
+  .bdBtn {
+      display: block;
+      width: 120px;
+      height: 46px;
+      float: left;
+      background: url(../img/baidu.png) -211px -180px no-repeat;
+      border: 0;
+  }
+  
+  .bdBtn:hover {
+      background-position: -211px -230px;
+  }
+  /*  页面主题内容*/
+  
+  .content {
+      width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .content_nav {
+      height: 41px;
+      margin-bottom: 15px;
+  }
+  
+  .content_nav ul li {
+      float: left;
+      cursor: pointer;
+  }
+  
+  #active {
+      background-color: #0aa770;
+  }
+  
+  .content_ul li a {
+      display: block;
+      width: 109px;
+      height: 41px;
+      line-height: 41px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      padding: 0 10px;
+      box-sizing: border-box;
+      background-color: #1fd394;
+  }
+  
+  .content_nav ul li a:hover {
+      background-color: #0aa770;
+  }
+  /* 左侧内容 */
+  
+  .left_content {
+      width: 280px;
+      height: 100%;
+      float: left;
+  }
+  /* 轮播图 */
+  
+  .slideBox {
+      width: 278px;
+      height: 68px;
+      border: 1px solid #dcdcdc;
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .slideBox:hover .swiperBtn {
+      display: block;
+  }
+  
+  .slide_container {
+      width: 1800px;
+  }
+  
+  .slide_img {
+      float: left;
+      position: relative;
+  }
+  
+  .swiperBtn {
+      background: url(../img/icon_split.png) no-repeat;
+      display: block;
+      width: 20px;
+      height: 44px;
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      display: none;
+  }
+  
+  .leftBtn {
+      background-position: 0px -422px;
+  }
+  
+  .rightBtn {
+      background-position: -31px -422px;
+      right: 0px;
+  }
+  /* 服务窗口 */
+  
+  .serviceTab {
+      width: 278px;
+      border: 1px solid #dcdcdc;
+  }
+  /* 明星频道 */
+  
+  .starBar {
+      width: 100%;
+      background-color: #fff;
+  }
+  
+  .starBar ul {
+      height: 140px;
+      padding: 15px 0px 15px 15px;
+  }
+  
+  .starBar ul li {
+      float: left;
+      width: 50%;
+      font-size: 15px;
+      position: relative;
+      margin-bottom: 7px;
+      padding-left: 25px;
+  }
+  
+  a:hover {
+      color: #f50;
+  }
+  
+  .stra_icon {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon_split.png) no-repeat;
+  }
+  
+  .i_tv {
+      background-position: -19px -80px;
+  }
+  
+  .i_game {
+      background-position: -19px -301px;
+  }
+  
+  .i_movie {
+      background-position: -19px -160px;
+  }
+  
+  .i_cartoon {
+      background-position: -19px -381px;
+  }
+  
+  .i_head {
+      background-position: -19px -100px;
+  }
+  
+  .i_trav {
+      background-position: -19px -261px;
+  }
+  
+  .i_ticket {
+      background-position: -19px -21px;
+  }
+  
+  .i_funny {
+      background-position: -19px -120px;
+  }
+  
+  .i_mob {
+      background-position: -19px -281px;
+  }
+  
+  .i_en {
+      background-position: -19px -362px;
+  }
+  /* 工具栏 */
+  
+  .toolsBar {
+      border-top: 1px solid #dcdcdc;
+      width: 100%;
+      height: 30px;
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .change {
+      height: 70px;
+  }
+  
+  .toolsBar ul {
+      padding: 10px 0px 10px 40px;
+  }
+  
+  .toolsBar ul li {
+      float: left;
+      width: 43px;
+      font-size: 13px;
+      margin-bottom: 10px;
+  }
+  
+  .tools_icon {
+      top: 7px;
+      left: 15px;
+      background-position: -18px -221px;
+  }
+  
+  .star_updown {
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 22px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+  }
+  
+  .rotateT {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+  }
+  /* 右侧内容 */
+  
+  .right_content {
+      width: 900px;
+      height: 100%;
+      float: left;
+      margin-left: 18px;
+  }
+  
+  .hotPub {
+      width: 900px;
+      height: 210px;
+      border: 1px solid #1fd394;
+  }
+  
+  .guessYourlike {
+      width: 900px;
+      height: 115px;
+      border: 1px solid #1fd394;
+      margin-top: 15px;
+  }
+  
+  .hotWeb {
+      height: 105px;
+      padding-left: 20px;
+  }
+  
+  .hotUl li {
+      float: left;
+      width: 140px;
+      font-size: 15px;
+      padding: 11px 0px 0px 10px;
+  }
+  
+  .baidu {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -200px no-repeat;
+  }
+  
+  .sohu {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -320px no-repeat;
+  }
+  
+  .sina {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -280px no-repeat;
+  }
+  
+  .tenc {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -40px no-repeat;
+  }
+  
+  .netease {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -160px no-repeat;
+  }
+  
+  .youku {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -400px no-repeat;
+  }
+  
+  .tmall {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -480px no-repeat;
+  }
+  
+  .phoenix {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -240px no-repeat
+  }
+  
+  .taobao {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -360px no-repeat
+  }
+  
+  .freegame {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/freegame.png) no-repeat
+  }
+  
+  .game4399 {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px 0px no-repeat
+  }
+  
+  .rio {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/rio.png) no-repeat
+  }
+  
+  .suning {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/suning.png) no-repeat;
+  }
+  
+  .sale {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/sale.png) no-repeat
+  }
+  
+  .hao {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -640px no-repeat
+  }
+  
+  .jd {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/jd.png) no-repeat
+  }
+  
+  .carhome {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/defaultIcon1229.png) 0px -520px no-repeat
+  }
+  
+  .cheap {
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: left;
+      background: url(../img/juhuasuan.png) no-repeat
+  }
+  
+  .otherWeb {
+      border-top: 1px solid #e4e4e4;
+      height: 80px;
+      margin: -2px 0px 0px 20px;
+  }
+  
+  .otherWeb li {
+      float: left;
+      width: 140px;
+      padding: 11px 0px 0px 10px;
+      font-size: 15px;
+  }
+  /* 皮肤颜色更换 */
