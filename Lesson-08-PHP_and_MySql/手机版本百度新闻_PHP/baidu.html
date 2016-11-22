@@ -1,0 +1,698 @@
+<!DOCTYPEhtmlPUBLIC"-//W3C//DTDXHTML1.0Transitional//EN" "http: //www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" media="only screen and (min-width:768px)" href="./css/baidu.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width:768px)" href="./css/mobile.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" media="only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)" href="./css/mobile.css"> -->
+</head>
+
+<body>
+    <!--百度头部包括导航-->
+    <header id="header" class="bd-header">
+        <!-- 手机模式 -->
+        <div class="infor mobClient" id="userinfo-wrap">
+            <div class="login"><a href="#"><i class="fa fa-user fa-lg"></i></a></div>
+            <div class="skin"><a href="#"><i class="fa fa-heart fa-lg"></i></a></div>
+        </div>
+        <!-- 登录成功 -->
+        <div class="loginSuccess pcClinet">
+            <div class="weather">
+                天气预报
+                <IFRAME ID='ifm2' WIDTH='168' HEIGHT='70' MARGINWIDTH='0' MARGINHEIGHT='0' HSPACE='0' VSPACE='0' FRAMEBORDER='0' SCROLLING='NO' src="http://news.sina.com.cn/iframe/weather/110100.html">
+                </iframe>
+            </div>
+            <div class="headtreasure">
+                <a href="http://vip.baidu.com/act/xuyuan">宝箱</a>
+            </div>
+            <div class="headSkin">
+                <span>换肤</span>
+            </div>
+            <div class="headerMsg">
+                <a href="">消息</a>
+            </div>
+        </div>
+        <!-- 换肤列表 -->
+        <div class="skinBox pcClinet">
+            <div class="skinUl">
+                <div class="skinOpt">
+                    <img class="skinImg" src="./img/1465049974495.jpg" alt="">
+                    <div class="skinshadow">
+                    </div>
+                </div>
+                <div class="skinOpt">
+                    <img class="skinImg" src="./img/skin1.jpg" alt="">
+                    <div class="skinshadow">
+                    </div>
+                </div>
+                <div class="skinOpt">
+                    <img class="skinImg" src="./img/skin2.jpg" alt="">
+                    <div class="skinshadow">
+                    </div>
+                </div>
+                <div class="skinOpt">
+                    <img class="skinImg" src="./img/skin3.jpg" alt="">
+                    <div class="skinshadow">
+                    </div>
+                </div>
+            </div>
+            <span id="unSkin" class="unSkin">不使用皮肤</span>
+            <span class="visibleSkin">收起</span>
+        </div>
+        <!-- 导航 -->
+        <nav class="nav-bar pcClinet">
+            <ul class="nav">
+                <li><a href="https://www.nuomi.com/?cid=002540" class="aGroup1">糯米</a></li>
+                <li><a href="news.html" class="aGroup1">新闻</a></li>
+                <li><a href="https://www.hao123.com/" class="aGroup1">hao123</a></li>
+                <li><a href="http://map.baidu.com/" class="aGroup1">地图</a></li>
+                <li><a href="http://v.baidu.com/" class="aGroup1">视频</a></li>
+                <li><a href="http://tieba.baidu.com/" class="aGroup1">贴吧</a></li>
+                <li><a id="loginBtn" class="aGroup2" style="text-decoration:underline;">登录</a></li>
+                <li><a href="" class="aGroup2 opition" id="option">设置</a>
+                    <ul class="optionUl" id="optionUl" style="display:none;">
+                        <!-- style="display:none;"-->
+                        <!-- 100*70 -->
+                        <li><a href="#">搜索设置</a></li>
+                        <li><a href="#">高级搜索</a></li>
+                        <li><a href="#">关闭预测</a></li>
+                        <li><a href="#">搜索历史</a></li>
+                    </ul>
+                </li>
+                <li class="group3" id="moretouch"><a>更多产品</a></li>
+                <ul id="more" class="more" style="display:none; color:#000">
+                    <!-- style="display:none;"-->
+                    <li class="fstli"><a class="setline">更多产品</a></li>
+                    <li class="music"><a href="http://music.baidu.com/" class="setline"><span></span> 音乐</a></li>
+                    <li class="pic"><a href="http://image.baidu.com/" class="setline"><span></span>图片</a></li>
+                    <li class="zhidao"><a href="http://zhidao.baidu.com/" class="setline"><span></span>知道</a></li>
+                    <li class="wenku"><a href="http://wenku.baidu.com/" class="setline"><span></span> 文库</a></li>
+                    <li class="bang"><a href="http://top.baidu.com/" class="setline"><span></span>风云榜 </a></li>
+                    <li class="tuiguang"><a href="http://e.baidu.com/?refer=888&subsite=sx" class="setline"><span></span> 百度推广</a></li>
+                    <li class="quanbulianjie"><a href="https://www.baidu.com/more/"><span></span> 全部连接>></a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <!-- 页面中部包含图片搜索栏 -->
+    <article class="bd-content">
+        <!-- 中间图片部分 -->
+        <section class="b-c-image">
+            <img class="pcClinet" src="./img/mb_logo.png" alt="Baidu-logo">
+            <img class="mobClient" src="./img/mb_logo.png" alt="Baidu-logo">
+        </section>
+        <!-- 中间搜索部分 -->
+        <section class="b-c-search">
+            <form action="#" method="get" accept-charset="utf-8">
+                <span class="search-box" id="search-box">
+                    <input type="text" name="search-txt" value="" placeholder="" id="search-txt">
+                    <span class="cmera">
+                    <div class="cmeraShow">
+                         <div class="cmrea-box"></div>
+                         <div class="voice-box"></div>
+                     </div>
+                    </span>
+                </span>
+                <span class="search-btn">
+                <input type="submit" name="search-btn" value="百度一下">
+                </span>
+            </form>
+        </section>
+        <section class="loginMsgBox pcClinet">
+            <ul class="msgUl">
+                <li class="follow ulShow">我的关注</li>
+                <!--                 <li class="ulShow">推荐</li> -->
+                <li>导航</li>
+                <li>视频</li>
+                <li>购物</li>
+                <li>奥运</li>
+                <li>体育</li>
+            </ul>
+            <div class="msgCotent myFocus">
+                <button type="button">添加</button>
+            </div>
+            <div class="msgCotent nav_Tab">
+                <h1>猜你喜欢</h1>
+                <a href="" class="navTab">
+                    <img src="https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/icon/9483.png?1">
+                    <p>百度糯米</p>
+                    <a class="rebate" href="" title="">最高返利3.55%</a>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95541.png">
+                    <p>京东商城</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95780.png">
+                    <p>1号店</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95537.png?99">
+                    <p>苏宁易购</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95693.png">
+                    <p>唯品会</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/95517.png">
+                    <p>当当网</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/712.png">
+                    <p>apache服务器问题</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/lvoZeXSm1A5BphGlnYG/icon/7949.png">
+                    <p>高等教育学生信息网</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>网站信息大全</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/200974.png">
+                    <p>极客学院</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>网站信息大全</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>网站信息大全</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss2.bdstatic.com/lfoZeXSm1A5BphGlnYG/icon/8598.png">
+                    <p>海南师范</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>医疗保险</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/95524.png">
+                    <p>百度翻译</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>报告老板</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>网站信息大全</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/6000.png?3">
+                    <p>网站信息大全</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95487.png">
+                    <p>淘宝网</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/95753.png">
+                    <p>微信</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/200001.png">
+                    <p>斗鱼</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss3.bdstatic.com/iPoZeXSm1A5BphGlnYG/icon/95511.png">
+                    <p>腾讯</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/7656.png">
+                    <p>百度VIP</p>
+                </a>
+                <a href="" class="navTab">
+                    <img src="https://ss1.bdstatic.com/kvoZeXSm1A5BphGlnYG/icon/9321.png">
+                    <p>微软商店</p>
+                </a>
+            </div>
+            <div class="msgCotent vedio msgShow">
+                <div class="vedioBox movie">
+                    <a href="">
+                        <span class="movieTab"></span>
+                        <span class="movieEdit focusEidt">
+                                 <div class="addFocus">添加关注</div>
+                        </span>
+                        <span class="movieEdit starr">
+                                <div class="unInteresting">不感兴趣</div>
+                        </span>
+                        <img src="./img/vedio1.jpg" alt="" /></a>
+                    <p>天下无贼</p>
+                    <span class="level">
+                        <span class="levle1"></span>
+                    </span>
+                </div>
+                <div class="vedioBox movie">
+                    <a href="">
+                        <span class="movieTab"></span>
+                        <span class="movieEdit focusEidt">
+                              <div class="addFocus">添加关注</div>
+                        </span>
+                        <span class="movieEdit star">
+                             <div class="unInteresting">不感兴趣</div>
+                        </span>
+                        <img src="./img/vedio2.jpg" alt="" /></a>
+                    <p>功夫</p>
+                    <span class="level">
+                        <span class="levle1"></span>
+                    </span>
+                </div>
+                <div class="vedioBox vedioLongBox">
+                    <a href="">
+                        <span class="movieEdit focusEidt">
+                              <div class="addFocus">添加关注</div>
+                        </span>
+                        <span class="movieEdit star">
+                             <div class="unInteresting">不感兴趣</div>
+                        </span>
+                        <img src="./img/vedio3.jpg" alt="" />
+                        <p>天下无贼</p>
+                    </a>
+                    <a href="">
+                        <span class="movieEdit focusEidt">
+                              <div class="addFocus">添加关注</div>
+                        </span>
+                        <span class="movieEdit star">
+                             <div class="unInteresting">不感兴趣</div>
+                        </span>
+                        <img src="./img/vedio4.jpg" alt="" />
+                        <p>天下无贼</p>
+                    </a>
+                    <a href="">
+                        <span class="movieEdit focusEidt">
+                              <div class="addFocus">添加关注</div>
+                        </span>
+                        <span class="movieEdit star">
+                             <div class="unInteresting">不感兴趣</div>
+                        </span>
+                        <img src="./img/vedio5.jpg" alt="" />
+                        <p>天下无贼</p>
+                    </a>
+                    <a href="">
+                        <span class="movieEdit focusEidt">
+                              <div class="addFocus">添加关注</div>
+                        </span>
+                        <span class="movieEdit star">
+                             <div class="unInteresting">不感兴趣</div>
+                        </span>
+                        <img src="./img/vedio6.jpg" alt="" />
+                        <p>天下无贼</p>
+                    </a>
+                </div>
+            </div>
+            <div class="msgCotent shopping">
+                <div class="goods"><img src="./img/eaf81a4c510fd9f993c562212d2dd42a2934a4a3.jpg" alt="" class="goodsImg">
+                    <div class="introduceBox">
+                        <div class="introduce">
+                            <p>灵剑士头戴耳机</p>
+                        </div>
+                        <div class="opcity">
+                        </div>
+                        <div class="introduce">
+                            <p>三折重叠
+                                <font>返利42.5%</font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods">
+                    <img src="./img/359b033b5bb5c9ea59fe35abdd39b6003af3b36c.jpg" alt="" class="goodsImg">
+                    <div class="introduceBox">
+                        <div class="introduce">
+                            <p>苏宁818狂欢节</p>
+                        </div>
+                        <div class="opcity">
+                        </div>
+                        <div class="introduce">
+                            <p>0利风暴
+                                <font>全民疯抢</font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods"><img src="./img/eaf81a4c510fd9f9ea3669212d2dd42a2834a450.jpg" alt=" " class="goodsImg ">
+                    <div class="introduceBox">
+                        <div class="introduce ">
+                            <p>综合图书满减专场</p>
+                        </div>
+                        <div class="opcity">
+                        </div>
+                        <div class="introduce ">
+                            <p>近期好价
+                                <font>五折封顶</font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="saleMsg">
+                    <div class="saleOne">
+                        <h1>1元得iphone SE</h1>
+                        <p>其他超值商品 1元可得</p>
+                        <p><a href="">去看看</a></p>
+                    </div>
+                    <div class="slaeTwo">
+                        <h1>返利商城</h1>
+                        <ul>
+                            <li><a href="">京东商城</a></li>
+                            <li><a href="">百度糯米</a></li>
+                            <li><a href="">1号店</a></li>
+                            <li><a href="">当当网</a></li>
+                            <li><a href="">蘑菇街</a></li>
+                            <li><a href="">唯品会</a></li>
+                            <li><a href="">聚美优品</a></li>
+                            <li><a href="">苏宁易购</a></li>
+                            <li><a href="">国美在线</a></li>
+                            <li><a href="">更多>></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="msgCotent rio">
+                <div class="rioLogo ">
+                    <div class="rioCenter ">
+                        <img src="./img/rioLogo.png " alt=" ">
+                        <h1>2016里约奥运会</h1>
+                    </div>
+                </div>
+                <div class="rioLeft">
+                    <div class="rioSwiper ">
+                        <div class="rioSwiperBox ">
+                            <a href=" "><img src="./img/s1.jpg " alt=" " /></a>
+                            <a href=" "><img src="./img/s2.jpg " alt=" " /></a>
+                            <a href=" "><img src="./img/s3.jpg " alt=" " /></a>
+                            <a href=" "><img src="./img/s4.jpg " alt=" " /></a>
+                            <a href=" "><img src="./img/s5.jpg " alt=" " /></a>
+                            <a href=" "><img src="./img/s6.jpg " alt=" " /></a>
+                            <a href=" "><img src="./img/s7.jpg " alt=" " /></a>
+                        </div>
+                        <span id="rio_BtnL" class="sp_btn sp_btnL ">&lt</span>
+                        <span id="rio_BtnR" class="sp_btn sp_btnR ">&gt</span>
+                        <ul class="rioUl">
+                            <li class="active "></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="rioNews ">
+                        <h1>聚焦头条</h1>
+                        <p><a href=" " title=" ">中国乒乓男团3-0横扫韩国进决赛</a></p>
+                        <p><a href=" " title=" ">大冷门！男子3米板何超预赛出局</a></p>
+                        <p><a href=" " title=" ">傅海峰张楠惊天逆转 胜韩国挺进4强</a></p>
+                        <p><a href=" " title=" ">乒球女团中国3-0新加坡 与德国争冠</a></p>
+                        <p><a href=" " title=" ">链球张文秀摘银 波兰名将夺冠</a></p>
+                        <p><a href=" " title=" ">孙杨1句话霸气回应霍顿言论</a></p>
+                    </div>
+                </div>
+                <div class="rioRight ">
+                </div>
+            </div>
+            <div class="msgCotent sport ">
+                <div class="spoartSwiper">
+                    <div id="swiperBox1" class="swiperBox">
+                        <a href=" "><img src="./img/swiper1.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper2.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper3.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper4.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper5.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper6.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper7.jpg " alt=" " /></a>
+                        <a href=" "><img src="./img/swiper8.jpg " alt=" " /></a>
+                    </div>
+                    <span id="sp_L" class="sp_btn sp_btnL">&lt</span>
+                    <span id="sp_R" class="sp_btn sp_btnR">&gt</span>
+                    <ul class="spartUl ">
+                        <li class="active "></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="liveShow ">
+                    <ul class="liveUl ">
+                        <li class="liveActive ">全部</li>
+                        <li>篮球</li>
+                        <li>足球</li>
+                    </ul>
+                    <div class="liveBox allLive showThis ">
+                        <div class="liveTab ">
+                            <div><span><img src="./img/timberwrolves.jpg " alt=" "></span>
+                                <p>森林狼</p>
+                            </div>
+                            <div>
+                                <p>NBA</p>
+                                <p>已结束</p>
+                                <p><a href=" ">视频回看</a></p>
+                            </div>
+                            <div><span><img src="./img/chicago.jpg " alt=" "></span>
+                                <p>公牛</p>
+                            </div>
+                        </div>
+                        <div class="liveTab ">
+                            <div><span><img src="./img/timberwrolves.jpg " alt=" "></span>
+                                <p>曼城</p>
+                            </div>
+                            <div>
+                                <p>英超</p>
+                                <p>已结束</p>
+                                <p><a href=" ">图文</a></p>
+                            </div>
+                            <div><span><img src="./img/timberwrolves.jpg " alt=" "></span>
+                                <p>公牛</p>
+                            </div>
+                        </div>
+                        <div class="liveTab ">
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>长春亚泰</p>
+                            </div>
+                            <div>
+                                <p>中超</p>
+                                <p>已结束</p>
+                                <p><a href=" ">图文</a></p>
+                            </div>
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>公牛</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="liveBox basketLive ">
+                        <div class="liveTab ">
+                            <div><span><img src="./img/timberwrolves.jpg " alt=" "></span>
+                                <p>森林狼</p>
+                            </div>
+                            <div>
+                                <p>NBA</p>
+                                <p>已结束</p>
+                                <p><a href=" ">视频回看</a></p>
+                            </div>
+                            <div><span><img src="./img/timberwrolves.jpg " alt=" "></span>
+                                <p>公牛</p>
+                            </div>
+                        </div>
+                        <div class="liveTab ">
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>森林狼</p>
+                            </div>
+                            <div>
+                                <p>NBA</p>
+                                <p>已结束</p>
+                                <p><a href=" ">视频回看</a></p>
+                            </div>
+                            <div><span><img src="./img/timberwrolves.jpg " alt=" "></span>
+                                <p>公牛</p>
+                            </div>
+                        </div>
+                        <div class="liveTab ">
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>森林狼</p>
+                            </div>
+                            <div>
+                                <p>NBA</p>
+                                <p>已结束</p>
+                                <p><a href=" ">视频回看</a></p>
+                            </div>
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>公牛</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="liveBox soccerLive ">
+                        <div class="liveTab ">
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>曼城</p>
+                            </div>
+                            <div>
+                                <p>英超</p>
+                                <p>已结束</p>
+                                <p><a href=" ">图文</a></p>
+                            </div>
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>桑德兰</p>
+                            </div>
+                        </div>
+                        <div class="liveTab ">
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>长春亚泰</p>
+                            </div>
+                            <div>
+                                <p>中超</p>
+                                <p>已结束</p>
+                                <p><a href=" ">图文</a></p>
+                            </div>
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>江苏苏宁</p>
+                            </div>
+                        </div>
+                        <div class="liveTab ">
+                            <div><span><img src="./img/chicago.jpg " alt=" "></span>
+                                <p>广州富力</p>
+                            </div>
+                            <div>
+                                <p>中超</p>
+                                <p>已结束</p>
+                                <p><a href=" ">图文</a></p>
+                            </div>
+                            <div><span><img src="./img/changchun.jpg " alt=" "></span>
+                                <p>山东鲁能</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 手机模式 -->
+        <nav class="nav-bar mobClient mob_nav_bar ">
+            <ul class="mob_nav ">
+                <li class="news "><i class="fa fa-newspaper-o fa-lg "></i><a href="news.html " class="aGroup1 ">新闻</a></li>
+                <li class="fiction "><i class="fa fa-book fa-lg "></i><a href="http://dushu.baidu.com " class="aGroup1 ">小说</a></li>
+                <li class="vedio "><i class="fa fa-youtube-play fa-lg "></i><a href="http://v.baidu.com/ " class="aGroup1 ">视频</a></li>
+                <li class="nuomi "><i class="fa fa-shopping-bag fa-lg "></i><a href="https://www.nuomi.com/?cid=0025http://dushu.baidu.com40 " class="aGroup1 ">糯米</a></li>
+                <li class="map "><i class="fa fa-map fa-lg "></i><a href="http://map.baidu.com/ " class="aGroup1 ">地图</a></li>
+                <li class="mob_more " id="moretouch "><i class="fa fa-chevron-circle-down fa-lg "></i><a class="mobMore ">更多</a></li>
+                <li class="tieba "><i class="fa fa-qq fa-lg "></i><a href="http://tieba.baidu.com/ " class="aGroup1 ">贴吧</a></li>
+                <li class="pic "><i class="fa fa-picture-o fa-lg "></i><a href="http://image.baidu.com/ " class="setline "><span></span>图片</a>
+                </li>
+                <li class="tuiguang "><i class="fa fa-paw fa-lg "></i><a href="http://e.baidu.com/?refer=888&subsite=sx " class="setline "><span></span> 百度推广</a></li>
+                <li class="music "><i class="fa fa-music fa-lg "></i><a href="http://music.baidu.com/ " class="setline "><span></span> 音乐</a></li>
+                <li class="adds "><i class="fa fa-edge fa-lg "></i><a href="http://m.hao123.com/?tn=wisebaidu&ssid=0&from=844b&uid=&pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&bd_page_type=1 " class="setline "><span></span>网址</a></li>
+            </ul>
+        </nav>
+    </article>
+    <!-- 手机模式-->
+    <div class="plus_card mobClient card ">
+        <div class="mynav plus ">
+            <div class="mynav_title plus_title ">
+                <h2>我的导航</h2>
+                <a href=" " title=" "></a>
+                <i class="fa fa-bars fa-lg nav_button "></i>
+                <ul class="edit_box nav_box ">
+                    <li>编辑</li>
+                    <li>置顶</li>
+                    <li>关闭</li>
+                </ul>
+            </div>
+            <div class="mynav_content ">
+                <a href="http://tj.m.baidu.com/?tj_frm=wise_nav ">资讯</a>
+                <a href="http://m.hao123.com?itj=49 ">hao123</a>
+                <a href="http://image.baidu.com/wisebrowse/index?tag1=%E7%BE%8E%E5%A5%B3&tag2=%E5%85%A8%E9%83%A8&tag3=&pn=0&rn=10&from=index&fmpage=index&pos=magic#/home ">美女</a>
+                <a href="http://music.baidu.com/home?fr=mo ">音乐</a>
+                <a href=http://m.qiushibaike.com ">笑话</a>
+                    <a href="http://m.hao123.com/j.php?z=2&level=1&page=index_h5&pos=cydhbd_n2&key=0bb996e89e2d16b6b695c950f93691f1&url=http%3A%2F%2Fm.autohome.com.cn%2F%3Fpvareaid%3D102581%26origin%3Dnavigation.mhao123.com%26pvareaid%3D105659 ">汽车之家</a>
+                    <a href=" http://m.hao123.com/j.php?z=2&level=1&page=index_h5&pos=cydhbd_n2&key=f066c699ef41a2d2c1ef7dca268e089b&url=http%3A%2F%2Fm.58.com%2F%3Futm_source %3Dhao123mz%26utm_source%3Dhao123mz ">58同城</a>
+                    <a href=" "></a>
+                </div>
+            </div>
+            <div class="traffic plus ">
+                <div class="traffic_title plus_title ">
+                    <h2>交通路况</h2>
+                    <a href=" " title=" "></a>
+                    <div class="edit_box ">
+                    </div>
+                    <i class="fa fa-bars fa-lg traffic_button "></i>
+                    <ul class="edit_box traffic_box ">
+                        <li>编辑</li>
+                        <li>置顶</li>
+                        <li>关闭</li>
+                    </ul>
+                </div>
+                <div class="traffic_content ">
+                    <p>设置家和公司地址</p>
+                    <p>随时随地，了解实时路况</p>
+                </div>
+            </div>
+            <div class="admin mobClient card plus ">管理我的卡片</div>
+            </div>
+            <!-- 页面底部包含二个二维码、底部信息 -->
+            <footer class="bd-footer ">
+                <!-- 手机模式-->
+                <ul class="mob_bottomList mobClient ">
+                    <li class="hotIcon "><i class="fa fa-fire "></i><a href="http://uil.cbs.baidu.com/urlsafe/redirect?rid=100055 ">百度浏览器，上网提速200%</a></li>
+                    <li class="baiduIcon "><a href="https://itunes.apple.com/app/apple-store/id382201985?pt=328057&amp;ct=n-wise-20160121&amp;mt=8 ">手机百度， 6亿用户的极速搜索应用</a></li>
+                    <li class="hotIcon "><i class="fa fa-fire "></i><a href="http://e.baidu.com/m2/?refer=209 ">百度推广，让有需求的客户找到你</a></li>
+                </ul>
+                <div class="center ">
+                    <!-- 二维码 -->
+                    <!--       <div class="ft-div "> -->
+                    <article class="code-content pcClinet ">
+                        <img src="./img/baidu_prcode.png " alt=" " class="code-img ">
+                        <div class="code-div ">
+                            <p class="boldeFont ">手机百度</p>
+                            <p>快人一步</p>
+                        </div>
+                        <img src="./img/nuomi_prcode.png " alt=" " class="code-img ">
+                        <div class="code-div ">
+                            <p class="boldeFont ">百度糯米</p>
+                            <p>一元大餐</p>
+                        </div>
+                    </article>
+                    <div class="clearFloat "></div>
+                    <!-- 网站联系方式 -->
+                    <address class="bd-address ">
+                        <p class="pcClinet ">
+                            <a href="https://www.baidu.com/cache/sethelp/help.html " class="a1 ">把百度设为首页</a>
+                            <a href="http://home.baidu.com/ " class="a1 ">关于百度</a>
+                            <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome " class="a1 a2 ">About Baidu</a>
+                        </p>
+                        <p class="pcClinet ">
+                            <span>&copy;</span>2016 Baidu <a href="http://www.baidu.com/duty/ ">使用百度前必读</a><a href="http://jianyi.baidu.com/ ">意见反馈</a> 京ICP证030173号
+                        </p>
+                        <p class="websafe pcClinet "><i></i>京公网安备11000002000001号</p>
+                        <!-- 手机模式-->
+                        <div class="userMsg mobClient ">
+                            <i class="fa fa-pencil-square-o fa-lg "></i>
+                            <a href="http://ufosdk.baidu.com/?m=Client&amp;a=commonsubmit&amp;appid=517&amp;activityId=1&amp;needEmail=false&amp;bw=BD39A582C928AAE742894A4687A203AF&amp;kw=&amp;tn=iphone&amp;pageid=6 " "><i class="icon-feedback "></i>用户反馈</a>
+            </div>
+            <div class="copyrigh mobClient ">
+                <p><a href="http://www.baidu.com/duty/ ">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a></p>
+                <p><a class="recordcode websafe " href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001 "><i></i>京公网安备11000002000001号</a></p>
+            </div>
+            </address>
+        </div>
+        </footer>
+        <script src="./js/jquery-2.2.3.min.js " type="text/javascript "></script>
+        <!--[if lte IE 8]>
+        <script src="./js/html5.js"type="text/javascript"charset="utf-8"></script>
+        <script src="./js/jquery-1.11.3.min.js"type="text/javascript"charset="utf-8"></script>
+        <script type="text/javascript"src="./js/respond.min.js"></script>
+        <![endif]-->
+        <script src="./js/baidu.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
