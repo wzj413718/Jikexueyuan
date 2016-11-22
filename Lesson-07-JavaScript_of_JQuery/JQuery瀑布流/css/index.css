@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+img {
+    width: 190px;
+}
+
+.imgBox {
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 1px 1px 1px #dcdcdc;
+    border-radius: 10px;
+}
+
+.imgBorder {
+    float: left;
+}
